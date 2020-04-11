@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="915a4a9c-ed96-47cd-9132-3753252c2cf5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="homestead.test" id="e7e7fe32-23b2-4169-8ece-baa80590bb0d" name="Homestead" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/home/vagrant/code/silverstripe-demo" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP Vagrant">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/league/csv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/cms" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/versioned-admin" />
+      <path value="$PROJECT_DIR$/vendor/marcj/topsort" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/embed/embed" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/bramus/ansi-php" />
+      <path value="$PROJECT_DIR$/vendor/bramus/monolog-colored-line-formatter" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/reports" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/admin" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/campaign-admin" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/recipe-cms" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/config" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/recipe-plugin" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/framework" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/vendor-plugin" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/siteconfig" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/versioned" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/recipe-core" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/assets" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/graphql" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/errorpage" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/m1/env" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/silverstripe/asset-admin" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1ZEDa4tAS15Our0M0BjDQErTyVI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunManager" selected="PHP Web Page.silverstripe demo">
+    <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="silverstripe demo" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Homestead">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Script.test.php" />
+      <item itemvalue="PHP Web Page.silverstripe demo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.test.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="915a4a9c-ed96-47cd-9132-3753252c2cf5" name="Default Changelist" comment="" />
+      <created>1584395419834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584395419834</updated>
+      <workItem from="1584395421263" duration="7304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="228" y="27" key="#CLI_Interpreters" timestamp="1584395836171">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state x="228" y="27" key="#CLI_Interpreters/0.23.1280.685@0.23.1280.685" timestamp="1584395836171" />
+    <state x="227" y="27" key="#Servers" timestamp="1584396389963">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state x="227" y="27" key="#Servers/0.23.1280.685@0.23.1280.685" timestamp="1584396389963" />
+    <state x="104" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584396394056">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state x="104" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.685@0.23.1280.685" timestamp="1584396394056" />
+    <state x="349" y="60" key="#test.php" timestamp="1584395498654">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state x="349" y="60" key="#test.php/0.23.1280.685@0.23.1280.685" timestamp="1584395498654" />
+    <state width="1238" height="199" key="GridCell.Tab.0.bottom" timestamp="1584572564456">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.0.bottom/0.23.1280.685@0.23.1280.685" timestamp="1584572564456" />
+    <state width="1238" height="199" key="GridCell.Tab.0.center" timestamp="1584572564454">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.0.center/0.23.1280.685@0.23.1280.685" timestamp="1584572564454" />
+    <state width="1238" height="199" key="GridCell.Tab.0.left" timestamp="1584572564452">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.0.left/0.23.1280.685@0.23.1280.685" timestamp="1584572564452" />
+    <state width="1238" height="199" key="GridCell.Tab.0.right" timestamp="1584572564455">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.0.right/0.23.1280.685@0.23.1280.685" timestamp="1584572564455" />
+    <state width="1238" height="199" key="GridCell.Tab.1.bottom" timestamp="1584572564457">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.1.bottom/0.23.1280.685@0.23.1280.685" timestamp="1584572564457" />
+    <state width="1238" height="199" key="GridCell.Tab.1.center" timestamp="1584572564456">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.1.center/0.23.1280.685@0.23.1280.685" timestamp="1584572564456" />
+    <state width="1238" height="199" key="GridCell.Tab.1.left" timestamp="1584572564456">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.1.left/0.23.1280.685@0.23.1280.685" timestamp="1584572564456" />
+    <state width="1238" height="199" key="GridCell.Tab.1.right" timestamp="1584572564456">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.1.right/0.23.1280.685@0.23.1280.685" timestamp="1584572564456" />
+    <state width="1238" height="199" key="GridCell.Tab.2.bottom" timestamp="1584572564457">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.2.bottom/0.23.1280.685@0.23.1280.685" timestamp="1584572564457" />
+    <state width="1238" height="199" key="GridCell.Tab.2.center" timestamp="1584572564457">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.2.center/0.23.1280.685@0.23.1280.685" timestamp="1584572564457" />
+    <state width="1238" height="199" key="GridCell.Tab.2.left" timestamp="1584572564457">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.2.left/0.23.1280.685@0.23.1280.685" timestamp="1584572564457" />
+    <state width="1238" height="199" key="GridCell.Tab.2.right" timestamp="1584572564457">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state width="1238" height="199" key="GridCell.Tab.2.right/0.23.1280.685@0.23.1280.685" timestamp="1584572564457" />
+    <state x="461" y="296" key="NewPhpFileDialog" timestamp="1584395441058">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state x="461" y="296" key="NewPhpFileDialog/0.23.1280.685@0.23.1280.685" timestamp="1584395441058" />
+    <state x="149" y="23" key="SettingsEditor" timestamp="1584395915558">
+      <screen x="0" y="23" width="1280" height="685" />
+    </state>
+    <state x="149" y="23" key="SettingsEditor/0.23.1280.685@0.23.1280.685" timestamp="1584395915558" />
+  </component>
+</project>
