@@ -1,12 +1,12 @@
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('images/home-bg.jpg')">
+<header class="masthead" style="background-image: url('{$BannerImage.ScaleWidth(1200).URL}')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="site-heading">
           <h1>$Title</h1>
-          <span class="subheading">$Content.FirstParagraph</span>
+          <span class="subheading">$Subheading</span>
         </div>
       </div>
     </div>
@@ -24,19 +24,21 @@
               $Title
             </h2>
             <h3 class="post-subtitle">
-              $Teaser
+              $Subheading
             </h3>
           </a>
-          <p class="post-meta">Posted by {$Author} on {$Created.Nice}</p>
+          <p class="post-meta">Posted by {$AuthorName} on {$PublishDate.Long}</p>
         </div>
         <hr>
       <% end_loop %>
+
       <!-- Pager -->
       <div class="clearfix">
         <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
       </div>
     </div>
   </div>
+
    <!-- Portfolio Grid -->
  <!--  <div class="bg-light page-section" id="portfolio">
     <div class="row">

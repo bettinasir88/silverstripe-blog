@@ -3,7 +3,6 @@
 namespace SilverStripe\Blog;
 
 use SilverStripe\Forms\DateField;
-use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
 
 use Page;
@@ -14,20 +13,15 @@ class ArticlePage extends Page
 
     private static $db = [
         'PublishDate' => 'Date',
-        'Teaser'      => 'Text',
-        'Author'      => 'Varchar',
+        'AuthorName'  => 'Varchar',
     ];
 
     public function getCMSFields() 
     {
         $fields = parent::getCMSFields();
 
-        $fields->addFieldToTab('Root.Main', DateField::create('PublishDate','Publish date'), 'Content');   
-        $fields->addFieldToTab('Root.Main', TextareaField::create('Teaser')
-            ->setDescription('A summary line'), 
-            'Content'
-        );
-        $fields->addFieldToTab('Root.Main', TextField::create('Author'), 'Content');
+        $fields->addFieldToTab('Root.Main', DateField::create('PublishDate','Publish date'), 'Content');
+        $fields->addFieldToTab('Root.Main', TextField::create('AuthorName', 'Author\'s name'), 'Content');
 
         return $fields;
     }
