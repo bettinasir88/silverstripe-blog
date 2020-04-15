@@ -17,7 +17,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      <% loop $Children %>
+      <% loop $LatestArticles(3) %>
         <div class="post-preview">
           <a href="$Link">
             <h2 class="post-title">
