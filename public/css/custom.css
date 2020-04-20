@@ -1,0 +1,15 @@
+/*
+ * Pagination
+ */
+.page-item.active .page-link {
+	background-color: #0085a1;
+ 	border-color: #0085a1;
+}
+
+.page-link {
+	color: #868e96;
+}
+
+.page-link:hover {
+	color:  #0085a1;
+}
