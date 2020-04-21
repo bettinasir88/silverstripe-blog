@@ -2,7 +2,7 @@
 
 Powered by [SilverStripe 4](https://docs.silverstripe.org/en/4) and [Laravel Homestead](https://laravel.com/docs/7.x/homestead).
 
-This project is a simple blog application built to learn how SilverStripe works. There is a Homepage, Articles, About and Contact pages and all the content is coming from the CMS.
+This project is a simple blog application built to learn how SilverStripe works. There is a Homepage, Articles, About and Contact pages, all content coming from the CMS.
 
 ## Set-up
 
@@ -13,8 +13,6 @@ Provisioned in Laravel Homestead:
 - PHP 7
 - MySQL
 - Composer
-
----
 
 ### Instructions
 
@@ -33,7 +31,7 @@ composer install
 Make sure your Homestead.yaml has [folders and sites mapped](https://laravel.com/docs/7.x/homestead#configuring-homestead
 )
 
-When all set up, start your vagrant 
+When all is set up, start your vagrant
 ```
 vagrant up
 ```
@@ -48,14 +46,12 @@ Log into the SilverStripe admin and add your Pages and Articles
 http://homestead.test/admin
 ```
 
----
-
 ### Front-end
 
 [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction)
+
 [jQuery 3.4.1](https://api.jquery.com/category/deprecated/deprecated-3.4)
 
----
 
 ## TODOs
 
