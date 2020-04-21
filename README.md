@@ -1,29 +1,64 @@
-## Overview
+# Blog Application on SilverStripe
 
-Base project folder for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation. Required modules are installed via [http://github.com/silverstripe/recipe-cms](http://github.com/silverstripe/recipe-cms). For information on how to change the dependencies in a recipe, please have a look at [https://github.com/silverstripe/recipe-plugin](https://github.com/silverstripe/recipe-plugin). In addition, installer includes [theme/simple](https://github.com/silverstripe-themes/silverstripe-simple) as a default theme.
+Powered by [SilverStripe 4](https://docs.silverstripe.org/en/4) and [Laravel Homestead](https://laravel.com/docs/7.x/homestead).
 
-## Installation ##
+This project is a simple blog application built to learn how SilverStripe works. There is a Homepage, Articles, About and Contact pages and all the content is coming from the CMS.
 
-`composer create-project silverstripe/installer my-app`
+## Set-up
 
-See [Getting Started](https://docs.silverstripe.org/en/4/getting_started/) for more information.
+### Software Requirements
 
-## Bugtracker ##
+Provisioned in Laravel Homestead:
+- NGINX
+- PHP 7
+- MySQL
+- Composer
 
-Bugs are tracked on github.com ([framework issues](https://github.com/silverstripe/silverstripe-framework/issues),
-[cms issues](https://github.com/silverstripe/silverstripe-cms/issues)).
-Please read our [issue reporting guidelines](https://docs.silverstripe.org/en/4/contributing/issues_and_bugs/).
+---
 
-## Development and Contribution ##
+### Instructions
 
-If you would like to make changes to the SilverStripe core codebase, we have an extensive [guide to contributing code](https://docs.silverstripe.org/en/4/contributing/code/).
+Install [Laravel Homestead](https://laravel.com/docs/7.x/homestead)
 
-## Links ##
+Clone the repo and copy the environment file
+```
+git clone git@github.com:bettinasir88/silverstripe-blog.git && cd silverstripe-blog && cp .env.example .env
+```
 
- * [Changelogs](https://docs.silverstripe.org/en/4/changelogs/)
- * [Bugtracker: Framework](https://github.com/silverstripe/silverstripe-framework/issues)
- * [Bugtracker: CMS](https://github.com/silverstripe/silverstripe-cms/issues)
- * [Bugtracker: Installer](https://github.com/silverstripe/silverstripe-installer/issues)
- * [Forums](http://silverstripe.org/forums)
- * [Developer Mailinglist](https://groups.google.com/forum/#!forum/silverstripe-dev)
- * [License](./LICENSE)
+Run composer install in the project root folder
+```
+composer install
+```
+
+Make sure your Homestead.yaml has [folders and sites mapped](https://laravel.com/docs/7.x/homestead#configuring-homestead
+)
+
+When all set up, start your vagrant 
+```
+vagrant up
+```
+
+Done!! Now go to:
+```
+http://homestead.test
+```
+
+Log into the SilverStripe admin and add your Pages and Articles
+```
+http://homestead.test/admin
+```
+
+---
+
+### Front-end
+
+[Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction)
+[jQuery 3.4.1](https://api.jquery.com/category/deprecated/deprecated-3.4)
+
+---
+
+## TODOs
+
+- [ ] Add a search functionality for articles
+- [ ] Add better Bootstrap styling to Contact Form - using bootstrap-forms module
+- [ ] Add a photo preview for articles listed
