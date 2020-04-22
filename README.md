@@ -55,6 +55,6 @@ http://homestead.test/admin
 
 ## TODOs
 
-- [ ] Add a search functionality for articles
-- [ ] Add better Bootstrap styling to Contact Form - using bootstrap-forms module
+- [x] Add better Bootstrap styling to Contact Form - using bootstrap-forms module
+- [ ] Improve search functionality for articles - full text search
 - [ ] Add a photo preview for articles listed

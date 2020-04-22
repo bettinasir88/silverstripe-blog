@@ -37,6 +37,10 @@
         <% end_if %>
       <% end_loop %>
 
+      <% if not $Results %>
+        <p>Oops, no results. Try a different search term</p>
+      <% end_if %>
+
       <!-- Pager -->
       <% if $Results.MoreThanOnePage %>
         <div class="clearfix">
