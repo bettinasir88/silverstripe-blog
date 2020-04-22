@@ -1,4 +1,4 @@
-# Blog Application on SilverStripe
+# Simple Blog app on SilverStripe
 
 Powered by [SilverStripe 4](https://docs.silverstripe.org/en/4) and [Laravel Homestead](https://laravel.com/docs/7.x/homestead).
 
