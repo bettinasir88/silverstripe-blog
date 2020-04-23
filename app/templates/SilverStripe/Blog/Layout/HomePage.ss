@@ -37,7 +37,7 @@
       <!-- Pager -->
       <% with $Page(articles) %>
         <div class="clearfix">
-            <a class="btn btn-primary float-right" href="$Link">Older Posts &rarr;</a>
+            <a class="btn btn-primary float-right" href="$Link">More Posts! &rarr;</a>
         </div>
       <% end_with %>
     </div>

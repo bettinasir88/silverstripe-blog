@@ -26,17 +26,17 @@ class ContactPageController extends PageController
             __FUNCTION__,
             FieldList::create(
                 TextField::create('Name','')
-                    ->setAttribute('placeholder', 'Your Name')
+                    ->setAttribute('placeholder', 'Name')
                     ->addExtraClass('floating-label-form-group controls'),
                 EmailField::create('Email','')
-                    ->setAttribute('placeholder', 'Your Email')
+                    ->setAttribute('placeholder', 'Email')
                     ->addExtraClass('floating-label-form-group controls'),
                 TextareaField::create('Message','')
-                    ->setAttribute('placeholder', 'Your Message')
+                    ->setAttribute('placeholder', 'Message')
                     ->addExtraClass('floating-label-form-group controls mt-2'),
             ),
             FieldList::create(
-                FormAction::create('handleContact','Send')
+                FormAction::create('handleContact','Send!')
                     ->setUseButtonTag(true)
                     ->addExtraClass('btn btn-primary m-3')
             ),
