@@ -3,7 +3,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-9 col-md-10 mx-auto">
         <div class="site-heading">
           <h1>$Title</h1>
           <span class="subheading">$Subheading</span>
@@ -38,7 +38,7 @@
       <% end_loop %>
 
       <% if not $Results %>
-        <p>Oops, no results. Try a different search term</p>
+        <p>Oops, there are no results. Try a different search term.</p>
       <% end_if %>
 
       <!-- Pager -->

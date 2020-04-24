@@ -3,7 +3,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-9 col-md-10 mx-auto">
         <div class="site-heading">
           <h1>$Title</h1>
           <span class="subheading">$Subheading</span>
@@ -16,7 +16,7 @@
 <!-- Main Content -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="cms-content col-lg-8 col-md-10 mx-auto">
       $Content
     </div>
   </div>
