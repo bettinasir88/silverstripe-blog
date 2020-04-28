@@ -58,7 +58,7 @@ a:focus, a:hover {
  * Nav
  */
 header.masthead .overlay {
-	opacity: 0.35;
+	opacity: 0.5;
 }
 
 #mainNav a.navbar-brand {

@@ -20,6 +20,12 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         $Content
+        <small class="text-muted">Posted by {$AuthorName} on {$PublishDate.Long}</small>
+        <% with $Page(articles) %>
+          <div class="clearfix">
+              <a class="btn btn-primary float-right mt-2" href="$Link">Back to Tips &rarr;</a>
+          </div>
+        <% end_with %>
       </div>
     </div>
   </div>
