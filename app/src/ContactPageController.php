@@ -33,7 +33,7 @@ class ContactPageController extends PageController
                     ->addExtraClass('floating-label-form-group controls'),
                 TextareaField::create('Message','')
                     ->setAttribute('placeholder', 'Message')
-                    ->addExtraClass('floating-label-form-group controls mt-2'),
+                    ->addExtraClass('floating-label-form-group controls mt-2')
             ),
             FieldList::create(
                 FormAction::create('handleContact','Send!')
