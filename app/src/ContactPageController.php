@@ -10,6 +10,7 @@ use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\FormAction;
 use SilverStripe\Forms\RequiredFields;
+use SilverStripe\ORM\ValidationResult;
 
 use PageController;
 
@@ -52,7 +53,11 @@ class ContactPageController extends PageController
         $form->saveInto($submission);
         $submission->write();
 
-        $form->sessionMessage('Thanks for your message','good');
+        $form->sessionMessage(
+            '<div class="alert alert-success" role="alert">Thanks for your message. We\'ll be in touch soon 🌟</div>',
+            'good', 
+            ValidationResult::CAST_HTML
+        );
 
         return $this->redirectBack();
     }
