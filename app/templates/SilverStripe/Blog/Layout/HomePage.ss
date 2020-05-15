@@ -1,3 +1,4 @@
+<% cached 'last_edited', $LastEdited %> 
 <!-- Page Header -->
 <header class="masthead" style="background-image: url('{$BannerImage.ScaleWidth(1200).URL}')">
   <div class="overlay"></div>
@@ -17,27 +18,29 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      <% loop $LatestArticles(3) %>
-        <div class="post-preview">
-          <a href="$Link">
-            <h2 class="post-title">
-              $Title
-            </h2>
-            <h3 class="post-subtitle">
-              $Subheading
-            </h3>
-          </a>
-          <p class="post-meta">Posted by {$AuthorName} on {$PublishDate.Long}</p>
-        </div>
-        <% if not $Last %>
-          <hr>
-        <% end_if %>
-      <% end_loop %>
+      <% cached $LatestArticles.max('LastEdited') %>
+        <% loop $LatestArticles %>
+          <div class="post-preview">
+            <a href="$Link">
+              <h2 class="post-title">
+                $Title
+              </h2>
+              <h3 class="post-subtitle">
+                $Subheading
+              </h3>
+            </a>
+            <p class="post-meta">Posted by {$AuthorName} on {$PublishDate.Long}</p>
+          </div>
+          <% if not $Last %>
+            <hr>
+          <% end_if %>
+        <% end_loop %>
+      <% end_cached %>
 
       <!-- Pager -->
       <% with $Page(articles) %>
         <div class="clearfix">
-            <a class="btn btn-primary float-right" href="$Link">More Posts! &rarr;</a>
+            <a class="btn btn-primary float-right" href="$Link">See Posts &rarr;</a>
         </div>
       <% end_with %>
     </div>
@@ -63,3 +66,4 @@
     </div>
   </div> --%>
 </div>
+<% end_cached %>

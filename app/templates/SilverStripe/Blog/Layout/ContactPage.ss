@@ -1,3 +1,4 @@
+<% cached 'last_edited', $LastEdited %>
 <!-- Page Header -->
 <header class="masthead" style="background-image: url('{$BannerImage.ScaleWidth(1200).URL}')">
   <div class="overlay"></div>
@@ -18,7 +19,10 @@
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
       $Content
-      $ContactForm
+      <% uncached %>
+        $ContactForm
+      <% end_uncached %>
     </div>
   </div>
 </div>
+<% end_cached %>

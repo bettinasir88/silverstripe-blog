@@ -1,3 +1,4 @@
+<% cached 'last_edited', $LastEdited %> 
 <!-- Page Header -->
 <header class="masthead" style="background-image: url('{$BannerImage.ScaleWidth(1200).URL}')">
   <div class="overlay"></div>
@@ -12,6 +13,7 @@
     </div>
   </div>
 </header>
+<% end_cached %>
 
 <!-- Main Content -->
 <div class="container">
