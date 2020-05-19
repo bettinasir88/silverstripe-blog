@@ -1,0 +1,18 @@
+---
+Name: appcache
+After:
+  - '*#corecache'
+---
+SilverStripe\Core\Injector\Injector:
+  MemcachedClient:
+    class: 'Memcached'
+    calls:
+      - [ addServer, [ 'localhost', 11211 ] ]
+  MemcachedCacheFactory:
+    class: 'SilverStripe\Core\Cache\MemcachedCacheFactory'
+    constructor:
+      client: '%$MemcachedClient'
+  SilverStripe\Core\Cache\CacheFactory: '%$MemcachedCacheFactory'
+  Psr\SimpleCache\CacheInterface.cacheblock:
+    constructor:
+      defaultLifetime: 604800 # 7 days
