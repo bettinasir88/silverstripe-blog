@@ -16,8 +16,7 @@
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="/css/dist/main.css" rel="stylesheet">
 
 </head>
 
@@ -34,7 +33,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="javascript/clean-blog.js"></script>
+  <script src="javascript/dist/bundle.js"></script>
 
 </body>
 
