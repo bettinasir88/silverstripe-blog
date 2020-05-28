@@ -4,4 +4,5 @@
 /themes/simple/
 /_resources/
 /public/_resources/
+/node_modules/
 .DS_Store
