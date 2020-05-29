@@ -18,129 +18,144 @@
  */
 a {
   color: #7b7069;
-}
-
-a:focus, a:hover {
-  color: #968678;
+  
+    &:focus,
+    &:hover {
+        color: #968678;
+    }
 }
 
 .btn-primary {
-  background-color: #f39999 !important;
-  border-color: #f39999 !important;
-}
+    background-color: #f39999 !important;
+    border-color: #f39999 !important;
 
-.btn-primary:hover, 
-.btn-primary:focus, 
-.btn-primary:active {
-  background-color: #f1a3a3 !important;
-  border-color: #f1a3a3 !important;
+    &:hover, 
+    &:focus, 
+    &:active {
+      background-color: #f1a3a3 !important;
+      border-color: #f1a3a3 !important;
+    }
 }
 
 /**
  * Pagination
  */
-.page-item.active .page-link {
-	background-color: #f39999;
- 	border-color: #f39999;
+.page-item.active > .page-link {
+    background-color: #f39999;
+    border-color: #f39999;
 }
 
 .page-link {
-	color: #868e96;
-	border-color: #eaeae3;
-}
+    color: #868e96;
+    border-color: #eaeae3;
 
-.page-link:hover {
-	color:  #f39999;
-	background-color: #fbfaf9;
+    &:hover {
+        color:  #f39999;
+        background-color: #fbfaf9;
+    }
 }
 
 /**
  * Nav
  */
-header.masthead .overlay {
-	opacity: 0.5;
-}
+#mainNav {
+    a.navbar-brand {
+        font-family: Playfair Display, serif;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+    }
 
-#mainNav a.navbar-brand {
-	font-family: Playfair Display, serif;
-	font-size: 1.5rem;
-	text-transform: lowercase;
-}
+    &.is-fixed {
+        .navbar-brand, 
+        .navbar-nav > li.nav-item > a {
+            color: #4e4844;
+        }
 
-#mainNav.is-fixed .navbar-brand, 
-#mainNav.is-fixed .navbar-nav > li.nav-item > a {
-	color: #4e4844;
-}
-
-#mainNav.is-fixed .navbar-brand:focus, 
-#mainNav.is-fixed .navbar-brand:hover,
-#mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, 
-#mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-	color: #968678;
+        .navbar-brand:focus, 
+        .navbar-brand:hover,
+        .navbar-nav > li.nav-item > a:focus, 
+        .navbar-nav > li.nav-item > a:hover {
+            color: #968678;
+        }
+    }
 }
 
 @media only screen and (min-width: 992px) {
-	#mainNav .navbar-brand {
-	    padding: 7px 20px;
-	}
+    #mainNav .navbar-brand {
+        padding: 7px 20px;
+    }
 }
 
 /**
  * Footer
  */
 .footer-links i.fa-circle {
-	color: #cec2b8;
+    color: #cec2b8;
 }
 
 /**
  * Site Headings
  */
-header.masthead .site-heading h1 {
-	font-weight: 700;
-}
+header.masthead {
+    .site-heading {
+        h1 {
+            font-weight: 700;
+        }
 
-header.masthead .site-heading .subheading {
-	font-style: italic;
-	font-family: Lora,'Times New Roman',serif;
-	font-size: 1.6rem;
+        .subheading {
+            font-style: italic;
+            font-family: Lora,'Times New Roman',serif;
+            font-size: 1.6rem;
+        }
+    }
+
+    .overlay {
+        opacity: 0.5;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-	header.masthead .site-heading h1 {
-		font-size: 4.2rem;
-	}
+    header.masthead .site-heading h1 {
+        font-size: 4.2rem;
+    }
 }
 
 /**
  * Articles
  */
-.post-preview > a:focus, 
-.post-preview > a:hover,
-.post-preview > .post-meta > a:focus, 
-.post-preview > .post-meta > a:hover {
-  color: #4e4844;
+.post-preview {
+    > a:focus, 
+    > a:hover,
+    > .post-meta > a:focus,
+    > .post-meta > a:hover {
+      color: #4e4844;
+    } 
+
+    .post-meta {
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-	.post-preview > a >.post-title {
-		font-size: 2rem;
-	}
+    .post-preview > a {
+        >.post-title {
+            font-size: 2rem;
+        }
 
-	.post-preview > a >.post-subtitle {
-		font-size: 1.4rem;
-	}
-}
-
-.post-preview .post-meta {
-	font-size: 1.1rem;
+        >.post-subtitle {
+            font-size: 1.4rem;
+        }
+    }
 }
 
 /**
  * Content
  */
-.cms-content > h1,
-.cms-content > h2,
-.cms-content > h3,
-.cms-content > h4 {
-	font-family: Lora,'Times New Roman',serif;
+.cms-content {
+    > h1,
+    > h2,
+    > h3,
+    > h4 {
+        font-family: Lora,'Times New Roman',serif;
+    }
 }

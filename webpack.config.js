@@ -1,7 +1,6 @@
-var path = require('path');
-
+var path              = require('path');
+var es2015            = require('babel-preset-es2015');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var es2015 = require('babel-preset-es2015');
 
 var extractPlugin = new ExtractTextPlugin({
     filename: 'css/dist/main.css'
@@ -28,7 +27,10 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: extractPlugin.extract({
-                    use: ['css-loader', 'sass-loader']
+                    use: [
+                        'css-loader', 
+                        'sass-loader'
+                    ]
                 })
             }
         ]
