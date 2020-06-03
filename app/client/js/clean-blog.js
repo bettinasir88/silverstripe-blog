@@ -1,3 +1,5 @@
+import 'jquery';
+import 'bootstrap';
 import '../css/clean-blog.scss';
 
 (function($) {

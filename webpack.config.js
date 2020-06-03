@@ -1,6 +1,7 @@
 var path              = require('path');
 var es2015            = require('babel-preset-es2015');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack           = require('webpack');
 
 var extractPlugin = new ExtractTextPlugin({
     filename: 'css/dist/main.css'
@@ -27,15 +28,39 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: extractPlugin.extract({
+                    // Adds CSS to the DOM by injecting a `<style>` tag
+                    fallback: 'style-loader',
                     use: [
-                        'css-loader', 
-                        'sass-loader'
+                        {
+                            // Interprets `@import` and `url()` like `import/require()` and will resolve them
+                            loader: 'css-loader'
+                        },
+                        {
+                            // Loader for webpack to process CSS with PostCSS
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: function () {
+                                    return [
+                                        require('precss'),
+                                        require('autoprefixer')
+                                    ];
+                                }
+                            }
+                        },
+                        {
+                            // Loads a SASS/SCSS file and compiles it to CSS
+                            loader: 'sass-loader'
+                        }
                     ]
                 })
             }
         ]
     },
     plugins: [
-        extractPlugin
+        extractPlugin,
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
     ]
 };
