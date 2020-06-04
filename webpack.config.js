@@ -53,7 +53,27 @@ module.exports = {
                         }
                     ]
                 })
-            }
+            },
+            {
+                // the url-loader uses DataUrls
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: "url-loader?limit=10000&mimetype=application/font-woff",
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'vendor/fontawesome-free/webfonts',
+                    publicPath: '../vendor/fontawesome-free/webfonts'
+                }
+            },
+            {   
+                // the file-loader emits files
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: "file-loader",
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'vendor/fontawesome-free/webfonts',
+                    publicPath: '../vendor/fontawesome-free/webfonts'
+                }
+            },
         ]
     },
     plugins: [
