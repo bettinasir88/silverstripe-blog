@@ -19,7 +19,7 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^6.0.0",
     "font-awesome-sass-loader": "^2.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
     "sass-loader": "^6.0.7",
